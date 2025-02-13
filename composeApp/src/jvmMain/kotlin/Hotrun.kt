@@ -5,7 +5,7 @@ import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 import java.awt.Dimension
 
-import cat.itb.trivialapp.TrivialApp
+
 import org.jetbrains.compose.reload.DevelopmentEntryPoint
 
 fun main() = application {

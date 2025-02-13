@@ -1,5 +1,5 @@
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.*
+
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -12,15 +12,15 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
 import kotlinx.coroutines.delay
 
-fun main() = application{
-    Window(
-        title = "Trivial App",
-        state = rememberWindowState(width = 540.dp, height = 960.dp),
-        onCloseRequest = ::exitApplication,
-    ) {
-        TrivialApp()
-    }
-}
+//fun main() = application{
+//    Window(
+//        title = "Trivial App",
+//        state = rememberWindowState(width = 540.dp, height = 960.dp),
+//        onCloseRequest = ::exitApplication,
+//    ) {
+//        TrivialApp()
+//    }
+//}
 
 enum class EScreen {
     Menu, Game, Result, Settings

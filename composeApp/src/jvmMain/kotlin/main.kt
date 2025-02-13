@@ -6,7 +6,7 @@ import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
 import java.awt.Dimension
 
-import cat.itb.m78.exercices.App
+
 
 fun main() = application {
     Window(
