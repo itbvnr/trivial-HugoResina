@@ -4,6 +4,7 @@ import org.jetbrains.compose.reload.ComposeHotRun
 import org.jetbrains.kotlin.compose.compiler.gradle.ComposeFeatureFlag
 import org.jetbrains.kotlin.gradle.plugin.KotlinSourceSetTree
 
+// jvmRun -DmainClass=MainKt --quiet
 plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.compose.compiler)
@@ -19,10 +20,11 @@ composeCompiler {
 
 kotlin {
     jvmToolchain(11)
-    androidTarget {
-        //https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-test.html
-        instrumentedTestVariant.sourceSetTree.set(KotlinSourceSetTree.test)
-    }
+    androidTarget()
+//    androidTarget {
+//        //https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-test.html
+//        instrumentedTestVariant.sourceSetTree.set(KotlinSourceSetTree.test)
+//    }
 
     jvm()
 
